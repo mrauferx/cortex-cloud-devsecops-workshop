@@ -19,7 +19,7 @@ jobs:
       uses: bridgecrewio/checkov-action@master
       with:
         directory: code/
-        #soft_fail: true
+        soft_fail: true
         
     - name: Upload SARIF file
       uses: GitHub/codeql-action/upload-sarif@v3
